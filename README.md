@@ -10,7 +10,7 @@
 
 ```toml
 [dependencies]
-fizz_few_shot_retriever = { git = "https://github.com/Aid-On/fizz-few-shot-retriever", tag = "v0.1.0" }
+fizz_few_shot_retriever = { git = "https://github.com/aiviecast/fizz-few-shot-retriever", tag = "v0.1.0" }
 ```
 
 ## Tests
