@@ -1,7 +1,12 @@
 [package]
 name = "fizz_few_shot_retriever"
-version = "0.1.0"
+version = "0.2.0"
 description = "Fizz brain — retrieve top-k similar Q/A examples for a comment (bigram Jaccard). comment + corpus -> k examples"
 
 [dependencies]
-fizz_persona = { git = "https://github.com/aiviecast/fizz-persona", tag = "v0.2.1" }
+fizz_persona = { git = "https://github.com/aiviecast/fizz-persona", tag = "v0.3.0" }
+
+# Dialect epoch 15 (#4093): a git dependency outside github.com/almide is fetched only
+# from an owner the root manifest trusts.
+[trust]
+owners = ["github.com/aiviecast"]
