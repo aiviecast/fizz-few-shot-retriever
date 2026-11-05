@@ -18,7 +18,7 @@ type Scored = {
 
 // 空白を除いた文字 bigram 集合。
 fn bigrams(s: String) -> Set[String] = {
-  let clean = list.filter(string.chars(s), (c) => not is_ws(c))
+  let clean = list.filter(string.to_list(s), (c) => not is_ws(c))
   set.from_list(bigram_list(clean))
 }
 
@@ -39,7 +39,7 @@ fn jaccard(a: Set[String], b: Set[String]) -> Float = {
   if na == 0 or nb == 0 then 0.0
   else {
     let inter = set.len(set.intersection(a, b))
-    int.to_float(inter) / int.to_float(na + nb - inter)
+    float.from(inter) / float.from(na + nb - inter)
   }
 }
 

@@ -1,3 +1,3 @@
 # almide.lock — auto-generated, do not edit
 
-fizz_persona = { git = "https://github.com/aiviecast/fizz-persona", ref = "v0.2.1", commit = "9825ef8e90c204ff81bfba23d2be3e309a31081a" }
+fizz_persona = { git = "https://github.com/aiviecast/fizz-persona", ref = "v0.3.0", commit = "7ec89ccaa6141cac739efbdc2fb1ce142e322542" }
